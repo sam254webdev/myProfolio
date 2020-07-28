@@ -1,0 +1,1 @@
+const date=new Date();const dob=1997; const age=date.getFullYear()-dob;document.getElementById("age").innerHTML=age+" Yrs";
