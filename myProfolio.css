@@ -1,1 +1,295 @@
-*{padding:0;margin:0;box-sizing:border-box}:root{--black:#535353;--gray:#7e7e7e;--white:#fff;--brown:#bf7c63;--red:#592236}html,body{font-family:Tahoma,Geneva,Verdana,sans-serif,"Segoe UI";font-size:16px;background-color:var(--gray)}.container{width:100%;height:100%}#profile,#project_det,#my_skills,#my_contact{width:86%;min-height:350px;margin:50px auto;background-color:var(--white);border-radius:8px;overflow:hidden}.heading{width:100%;min-height:30px;text-align:center;color:var(--white);background-color:var(--red);padding:8px 0}.profile_info{height:100%;width:100%;display:flex}.profile_pic{width:45%;margin:20px 0 0 35px}.profile_pic img{border-radius:50%;box-shadow:0 0 10px 0 var(--black)}.profile_details{width:55%}.profile_details p{width:100%;padding:5px 6px;margin:25px 0}.profile_details p span:nth-child(1){color:var(--black);margin-right:15px}.profile_details p span:nth-child(2){color:var(--brown);margin-left:15px}.blog_proj,.kladi_proj,.skill_prog{width:95%;margin:50px auto}.blog_proj a, .kladi_proj a{color:var(--brown);margin:20px}.blog_images,.kladi_images{width:97%;display:flex;justify-content:space-around;flex-wrap:wrap}.image1,.image2,.image3,.image1a,.image2a,.image3a{width:46%;height:355px;margin-top:20px;margin-left:auto;margin-right:auto;box-shadow:0 0 5px 0 var(--black);border-radius:4px;overflow:hidden;background-size:cover;background-position:center;background-repeat:no-repeat}.image1{background-image:url(./Images/blogHomepage.png)}.image2{background-image:url(./Images/blogSinglepage.png)}.image3{background-image:url(./Images/moreStories.png)}.image1a{background-image:url(./Images/kladiHomepage.png)}.image2a{background-image:url(./Images/kladiShopingcart.png)}.image3a{background-image:url(./Images/kladiBuyingpage.png);background-position:top}.skill{width:100%;margin-top:28px}.skill h4{color:var(--brown);margin-left:60px}.skill_level{width:88%;height:18px;border-radius:40px;margin-left:60px;margin-top:15px;overflow:hidden;box-shadow:0 0 3px 0 var(--black)}.skill_level span{float:right;color:var(--brown);margin-right:20px;font-size:16px}.html,.react,.vue,.node,.firebase,.adobe{height:100%;background-color:var(--black)}.html{width:83%}.react{width:57%}.vue{width:69%}.node{width:51%}.firebase{width:71%}.adobe{width:77%}.contact_links{width:80%;margin:77px auto;display:flex;justify-content:space-around}.contact_links div{width:110px;height:100px;border:2px solid var(--brown);margin:2px;cursor:pointer}.email,.watsup,.linkdn,.github{padding:25px 30px}@media (max-width: 900px){.image1,.image2,.image3,.image1a,.image2a,.image3a{width:92%}.profile_info{flex-wrap:wrap}.profile_pic{margin:25px auto}.profile_pic img{width:80%}.profile_details{width:60%;margin:15px auto}}@media (max-width: 650px){.profile_info{flex-wrap:wrap}.profile_pic{margin:25px auto}.profile_pic img{width:90%}.profile_details{width:65%;margin:15px auto}.profile_details p{margin:10px 0}.image1,.image2,.image3,.image1a,.image2a,.image3a{height:200px}.skill{width:80%;margin-top:20px;font-weight:500}.skill_level{height:14px}.skill_level span{font-size:12px;font-weight:900;margin-right:2px}#my_contact{min-height:150px}svg{width:30px;height:30px}.contact_links div{width:55px;height:55px}.email,.watsup,.linkdn,.github{padding:10px 12px}}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --black: #535353;
+  --gray: #7e7e7e;
+  --white: #fff;
+  --brown: #bf7c63;
+  --red: #592236;
+}
+html,
+body {
+  font-family: Tahoma, Geneva, Verdana, sans-serif, "Segoe UI";
+  font-size: 16px;
+  background-image: linear-gradient(to right,rgba(65, 65, 68, 0.63),rgba(98, 218, 98, 0.575)),url(./Images/comp.jpg);
+  background-size: cover;
+  background-position: left;
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+#profile,
+#project_det,
+#my_skills,
+#my_contact {
+  width: 86%;
+  min-height: 350px;
+  margin: 50px auto;
+  background-color: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.heading {
+  width: 100%;
+  min-height: 30px;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--black);
+  padding: 8px 0;
+}
+.profile_info {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.profile_pic {
+  width: 45%;
+  margin: 20px 0 0 35px;
+}
+.profile_pic img {
+  border-radius: 50%;
+  box-shadow: 0 0 10px 0 var(--black);
+}
+.profile_details {
+  width: 55%;
+}
+.profile_details p {
+  width: 100%;
+  padding: 5px 6px;
+  margin: 25px 0;
+}
+.profile_details p span:nth-child(1) {
+  color: var(--black);
+  margin-right: 15px;
+}
+.profile_details p span:nth-child(2) {
+  color: var(--brown);
+  margin-left: 15px;
+}
+.blog_proj,
+.kladi_proj,
+.skill_prog {
+  width: 95%;
+  margin: 50px auto;
+}
+.blog_proj a,
+.kladi_proj a {
+  color: var(--brown);
+  margin: 20px;
+}
+.blog_images,
+.kladi_images {
+  width: 97%;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.image1,
+.image2,
+.image3,
+.image1a,
+.image2a,
+.image3a {
+
+
+  margin-top: 20px;
+  margin-left: 20px;
+  box-shadow: 0 0 5px 0 var(--black);
+  border-radius: 4px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.image1 {
+  background-image: url(./Images/blogHomepage.png);
+  grid-column: 1/-1;
+  height: 400px;
+}
+.image2 {
+  background-image: url(./Images/blogSinglepage.png);
+  grid-column: 1/2;
+  grid-row: 2/-1;
+  height: 400px;
+
+
+}
+.image3 {
+  background-image: url(./Images/moreStories.png);
+  grid-column: 2/3;
+  grid-row: 2/-1;
+  height: 400px;
+}
+.image1a {
+  background-image: url(./Images/kladiHomepage.png);
+  grid-column: 1/-1;
+  height: 400px;
+}
+.image2a {
+  background-image: url(./Images/kladiShopingcart.png);
+  grid-column: 1/2;
+  grid-row: 2/-1;
+  height: 400px;
+}
+.image3a {
+  background-image: url(./Images/kladiBuyingpage.png);
+  grid-column: 2/3;
+  grid-row: 2/-1;
+  height: 400px;
+
+}
+.skill {
+  width: 100%;
+  margin-top: 28px;
+}
+.skill h4 {
+  color: var(--gray);
+  margin-left: 60px;
+}
+.skill_level {
+  width: 88%;
+  height: 18px;
+  border-radius: 40px;
+  margin-left: 60px;
+  margin-top: 15px;
+  overflow: hidden;
+  /* box-shadow: 0 0 3px 0 var(--black); */
+  border: 1px solid var(--brown);
+}
+.skill_level span {
+  float: right;
+  color: var(--brown);
+  margin-right: 20px;
+  font-size: 16px;
+}
+.html,
+.react,
+.vue,
+.node,
+.firebase,
+.adobe {
+  height: 100%;
+  background-color: var(--brown);
+}
+.html {
+  width: 83%;
+}
+.react {
+  width: 57%;
+}
+.vue {
+  width: 69%;
+}
+.node {
+  width: 51%;
+}
+.firebase {
+  width: 71%;
+}
+.adobe {
+  width: 77%;
+}
+.contact_links {
+  width: 80%;
+  margin: 77px auto;
+  display: flex;
+  justify-content: space-around;
+}
+.contact_links div {
+  width: 110px;
+  height: 100px;
+  border: 2px solid var(--brown);
+  margin: 2px;
+  cursor: pointer;
+}
+.email,
+.watsup,
+.linkdn,
+.github {
+  padding: 25px 30px;
+}
+@media (max-width: 900px) {
+  .image1,
+  .image2,
+  .image3,
+  .image1a,
+  .image2a,
+  .image3a {
+    width: 92%;
+  }
+  .profile_info {
+    flex-wrap: wrap;
+  }
+  .profile_pic {
+    margin: 25px auto;
+  }
+  .profile_pic img {
+    width: 80%;
+  }
+  .profile_details {
+    width: 60%;
+    margin: 15px auto;
+  }
+}
+@media (max-width: 650px) {
+  .profile_info {
+    flex-wrap: wrap;
+  }
+  .profile_pic {
+    margin: 25px auto;
+  }
+  .profile_pic img {
+    width: 90%;
+  }
+  .profile_details {
+    width: 65%;
+    margin: 15px auto;
+  }
+  .profile_details p {
+    margin: 10px 0;
+  }
+  .image1,
+  .image2,
+  .image3,
+  .image1a,
+  .image2a,
+  .image3a {
+    height: 200px;
+  }
+  .skill {
+    width: 80%;
+    margin-top: 20px;
+    font-weight: 500;
+  }
+  .skill_level {
+    height: 14px;
+  }
+  .skill_level span {
+    font-size: 12px;
+    font-weight: 900;
+    margin-right: 2px;
+  }
+  #my_contact {
+    min-height: 150px;
+  }
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+  .contact_links div {
+    width: 55px;
+    height: 55px;
+  }
+  .email,
+  .watsup,
+  .linkdn,
+  .github {
+    padding: 10px 12px;
+  }
+}
